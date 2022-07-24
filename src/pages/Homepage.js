@@ -14,7 +14,7 @@ const Homepage = () => {
 
     const getPokemonList = async () => {
         let pokemonArray = [];
-        for(let i = 1; i <= 10; i ++){
+        for(let i = 1; i <= 151; i ++){
             pokemonArray.push(await getPokemonData(i));
         }
         console.log(pokemonArray);
@@ -38,7 +38,7 @@ const Homepage = () => {
             <Loader/>
         ) : (
             <div className='grid'>
-                <Filter pokemon={pokemon.data} setPokemon={setPokemon}/>
+                <Filter pokemon={pokemon} setPokemon={setPokemon}/>
                 {pokemon.map( p =>(
                     <Col key={p.data} xs={12} sm={12} md={4} lg={4} xl={4}>
                         <Pokemon pokemon={p.data} />

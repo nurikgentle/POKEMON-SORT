@@ -1,7 +1,6 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import './Catalog.css'
 import Pokemon from '../Homepage';  
-import Sort from '../../components/filter/filter'
 function Catalog() {
 
   const [isActive, setIsActive] = useState(false);
@@ -11,7 +10,7 @@ function Catalog() {
         <div class="Catalog">
         <div className="razryv" style={{ height: '10px' }}>
           <div class="rounder"></div>
-          <img class="line" src="/img/line.png"/>
+          <img class="line" src="/img/line.png" alt=''/>
         </div>  
                 <div class="l-p" style={{ marginRight: '0' }}>
                 <div class="Pocolenie">
